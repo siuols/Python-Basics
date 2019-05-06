@@ -37,18 +37,4 @@ def fibonacci(number_input):
         list_of_fibonacci.append(count)
     print ("Fibonacci is up until to index '" + str(number_input) + "' are " + str(list_of_fibonacci))
 
-#checks if the number inputted is a prime number
-def prime_number(number_input):
-    if number_input > 1:
-       for i in range(2,number_input):
-           if (number_input % i) == 0:
-               print(number_input,"is not a prime number")
-               print(i,"times",number_input//i,"is",number_input)
-               break
-       else:
-           print(number_input,"is a prime number")
-    else:
-       print(number_input,"is not a prime number")
-
-
 init()
