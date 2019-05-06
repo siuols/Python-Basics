@@ -12,17 +12,13 @@ def init():
 
 
 def addition(num1, num2):
-
     print ("The Sum {} and {} is: ".format(num1,num2), str(num1 + num2))
-
 
 def subtraction(num1, num2):
     print ("The Diffirence {} and {} is: ".format(num1,num2),str(num1 - num2))
 
-
 def multiplication(num1, num2):
     print("The Product {} and {} is: ".format(num1,num2), str(num1 - num2))
-
 
 def division(num1, num2):
     if num2 != 0:
