@@ -2,15 +2,22 @@ def init():
     num = []
     list_tuple = ()
     try:
-        num.append(input("Enter first string: "))
-        num.append(input("Enter second string: "))
-        num.append(input("Enter third string: "))
-        num.append(input("Enter fourth string: "))
+        num.append(int(input("Enter first number: ")))
+        num.append(int(input("Enter second number: ")))
+        num.append(int(input("Enter third number: ")))
+        num.append(int(input("Enter fourth number: ")))
         list_tuple = tuple(num)
         indexing(list_tuple)
         negative_indexing(list_tuple)
         slicing(list_tuple)
         combining_tuples(list_tuple)
+        tuple_list_count(list_tuple)
+        search_specific_word_tuple(list_tuple)
+        maximum_number(list_tuple)
+        minimum_number(list_tuple)
+        multiplying_tuple(list_tuple)
+        deleting_element(list_tuple)
+
     except ValueError:
         print("Invalid input")
 
@@ -36,5 +43,25 @@ def combining_tuples(list_tuple):
 def tuple_list_count(list_tuple):
     print(list_tuple, 'length is', len(list_tuple))
 
+def search_specific_word_tuple(list_tuple):
+    if "louis" in list_tuple:
+        print("'louis' is on the tuple {}.".format(list_tuple))
+    else:
+        print("'louis' is not found on the tuple {}.".format(list_tuple))
+
+def maximum_number(list_tuple):
+    print ("The maximum value of the tuple is {}.".format(max(list_tuple)))
+
+def minimum_number(list_tuple):
+    print ("The minumum value of the tuple is {}.".format(min(list_tuple)))
+
+def multiplying_tuple(list_tuple):
+    print("Multiplying the tuple by 2 looks like this {}.".format(list_tuple * 2))
+
+def deleting_element(list_tuple):
+    lists = list(list_tuple)
+    del lists[2]
+    conv_tuple = tuple(lists)
+    print("deleting {} in a tuple {}.".format(conv_tuple, list_tuple))
 
 init()
