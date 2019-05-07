@@ -11,7 +11,6 @@ def init():
         negative_indexing(list_tuple)
         slicing(list_tuple)
         combining_tuples(list_tuple)
-        cos(list_tuple)
     except ValueError:
         print("Invalid input")
 
